@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using WebApi.Entities;
-using WebApi.Helpers;
+using WebApi_Login.Entities;
+using WebApi_Login.Helpers;
 
-namespace WebApi.Services
+namespace WebApi_Login.Services
 {
     public interface IUserService
     {

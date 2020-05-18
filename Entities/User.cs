@@ -1,4 +1,4 @@
-namespace WebApi.Entities
+namespace WebApi_Login.Entities
 {
     public class User
     {

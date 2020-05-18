@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using System.IdentityModel.Tokens.Jwt;
-using WebApi.Helpers;
+using WebApi_Login.Helpers;
 using Microsoft.Extensions.Options;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
-using WebApi.Services;
-using WebApi.Entities;
-using WebApi.Models.Users;
+using WebApi_Login.Services;
+using WebApi_Login.Entities;
+using WebApi_Login.Models.Users;
 
-namespace WebApi.Controllers
+namespace WebApi_Login.Controllers
 {
     [Authorize]
     [ApiController]
@@ -88,6 +88,7 @@ namespace WebApi.Controllers
             }
         }
 
+
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -113,7 +114,7 @@ namespace WebApi.Controllers
 
             try
             {
-                // update user 
+                // update user
                 _userService.Update(user, model.Password);
                 return Ok();
             }

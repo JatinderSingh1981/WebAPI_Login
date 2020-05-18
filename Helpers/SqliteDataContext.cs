@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace WebApi.Helpers
+namespace WebApi_Login.Helpers
 {
     public class SqliteDataContext : DataContext
     {

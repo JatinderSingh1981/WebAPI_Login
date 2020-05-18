@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using WebApi.Entities;
+using WebApi_Login.Entities;
 
-namespace WebApi.Helpers
+namespace WebApi_Login.Helpers
 {
     public class DataContext : DbContext
     {

@@ -3,9 +3,9 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebApi.Helpers;
+using WebApi_Login.Helpers;
 
-namespace WebApi.Migrations.SqliteMigrations
+namespace WebApi_Login.Migrations.SqliteMigrations
 {
     [DbContext(typeof(SqliteDataContext))]
     partial class SqliteDataContextModelSnapshot : ModelSnapshot
@@ -16,7 +16,7 @@ namespace WebApi.Migrations.SqliteMigrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.0");
 
-            modelBuilder.Entity("WebApi.Entities.User", b =>
+            modelBuilder.Entity("WebApi_Login.Entities.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

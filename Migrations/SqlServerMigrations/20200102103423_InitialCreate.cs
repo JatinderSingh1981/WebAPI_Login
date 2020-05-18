@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace WebApi.Migrations.SqlServerMigrations
+namespace WebApi_Login.Migrations.SqlServerMigrations
 {
     public partial class InitialCreate : Migration
     {

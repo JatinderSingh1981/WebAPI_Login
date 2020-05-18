@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebApi.Helpers;
+using WebApi_Login.Helpers;
 
-namespace WebApi.Migrations.SqliteMigrations
+namespace WebApi_Login.Migrations.SqliteMigrations
 {
     [DbContext(typeof(SqliteDataContext))]
     [Migration("20200102102942_InitialCreate")]
@@ -18,7 +18,7 @@ namespace WebApi.Migrations.SqliteMigrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.0");
 
-            modelBuilder.Entity("WebApi.Entities.User", b =>
+            modelBuilder.Entity("WebApi_Login.Entities.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
